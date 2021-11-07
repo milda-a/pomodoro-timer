@@ -26,7 +26,7 @@ export default function SessionSettings(props) {
         bg="#E45826"
         defaultInput="3"
         preText="Poms per session"
-        postText="minutes"
+        postText="🍅"
       />
     </div>
   );

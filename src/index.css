@@ -4,7 +4,7 @@
 
 body {
   color: white;
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Boogaloo', cursive;
   font-size: 24px;
   text-align: center;
   background-color: #e6d5b8;
@@ -60,4 +60,30 @@ a:hover {
 p {
   min-width: 200px;
   color: #c1591b;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@keyframes wobble {
+  from {
+    transform: rotate(0);
+  }
+
+  20% {
+    transform: rotate(7deg);
+  }
+
+  60% {
+    transform: rotate(0);
+  }
+
+  80% {
+    transform: rotate(-7deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
 }
