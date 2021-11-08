@@ -1,22 +1,20 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import SessionSettings from './SessionSettings';
-import TimerNameField from './TimerNameField';
-import TimerStartButton from './TimerStartButton';
+import Home from './Home';
+import Timer from './Timer';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
+  function collectData() {}
+
   return (
     <div>
       <Header />
-      <div>
-        <form>
-          <TimerNameField />
-          <SessionSettings />
-          <TimerStartButton />
-        </form>
-      </div>
-
+      <Routes>
+        <Route path="/" element={<Home onSubmit={collectData} />} />
+        <Route path="timer" element={<Timer />} />
+      </Routes>
       <Footer />
     </div>
   );
